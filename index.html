@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Banco de Recursos Educativos. Materiales didácticos para aprender, practicar y compartir.">
+  <title>Banco de Recursos Educativos del CBT</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header id="inicio">
+  <div class="masthead">
+    <div class="masthead-landscape"></div>
+    <a class="brand" href="#inicio" aria-label="Banco de Recursos Educativos, inicio">
+      <img src="img/logo.svg" alt="" class="logo">
+      <span class="brand-words">
+        <strong>Banco de</strong>
+        <strong><em>Recursos</em> Educativos</strong>
+        <small>Materiales didácticos para aprender, practicar y compartir.</small>
+      </span>
+    </a>
+  </div>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a class="nav-link active" href="#inicio"><span class="nav-icon">⌂</span>Inicio</a>
+    <a class="nav-link" href="#matematicas" data-category="Matemáticas"><span class="nav-icon">▦</span>Matemáticas</a>
+    <a class="nav-link" href="#programacion" data-category="Programación"><span class="nav-icon code">&lt;/&gt;</span>Programación</a>
+    <a class="nav-link" href="#videos" data-category="Videos"><span class="nav-icon">▶</span>Videos</a>
+    <a class="nav-link" href="#materiales"><span class="nav-icon">▤</span>Materiales</a>
+    <a class="nav-link" href="#enlaces"><span class="nav-icon">↗</span>Enlaces de interés</a>
+    <a class="nav-link" href="#acerca"><span class="nav-icon">ⓘ</span>Acerca de</a>
+  </nav>
+</header>
+
+<main>
+  <section class="welcome">
+    <div class="welcome-text">
+      <h1>¡Bienvenidos!</h1>
+      <p>Este espacio reúne <b>materiales didácticos</b>, ejercicios, programas y herramientas digitales para apoyar el <b>aprendizaje</b> de Matemáticas, Programación y otras áreas del conocimiento.</p>
+      <p class="welcome-slogan">Explora los recursos disponibles y utilízalos para estudiar, practicar y desarrollar nuevas habilidades.</p>
+    </div>
+    <div class="welcome-art" role="img" aria-label="Aprender, practicar y compartir">
+      <img src="img/ilustracion-bienvenida.jpg" alt="">
+      <div class="welcome-art-caption">
+        <strong>Aprender · Practicar · Compartir</strong>
+        <span>“Los recursos educativos también<br> hacen crecer comunidades”.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="category-grid" aria-label="Categorías principales">
+    <a class="category-card math" id="matematicas" href="#recursos" data-filter="Matemáticas">
+      <span class="category-icon math-icon">＋<small>− × ÷</small></span>
+      <h2>Matemáticas</h2><p>Apuntes, ejercicios,<br> guías y evaluaciones.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+    <a class="category-card programming" id="programacion" href="#recursos" data-filter="Programación">
+      <span class="category-icon code-icon">&lt;/&gt;</span>
+      <h2>Programación</h2><p>Programas, ejemplos,<br> módulos y prácticas.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+    <a class="category-card subjects" href="#recursos" data-filter="Otras asignaturas">
+      <span class="category-icon book-icon">▤</span>
+      <h2>Otras asignaturas</h2><p>Materiales de apoyo<br> para diferentes áreas.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+    <a class="category-card tools" href="#recursos" data-filter="Herramientas digitales">
+      <span class="category-icon tools-icon">⚒</span>
+      <h2>Herramientas<br> digitales</h2><p>Aplicaciones y recursos<br> útiles para el estudio.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+    <a class="category-card guides" href="#recursos" data-filter="Formatos y guías">
+      <span class="category-icon pdf-icon"><b>PDF</b></span>
+      <h2>Formatos y guías</h2><p>Planeaciones, formatos<br> y documentos de interés.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+    <a class="category-card projects" href="#recursos" data-filter="Proyectos didácticos">
+      <span class="category-icon bulb-icon">☼</span>
+      <h2>Proyectos didácticos</h2><p>Ideas, ejemplos y recursos<br> para desarrollar proyectos.</p>
+      <span class="card-button">Ver recursos <b>→</b></span>
+    </a>
+  </section>
+
+  <nav class="quick-links" aria-label="Accesos rápidos">
+    <a href="#inicio"><span>⌂</span>Inicio</a><i></i>
+    <a href="#para-estudiantes"><span>♟</span>Para estudiantes</a><i></i>
+    <a href="#para-docentes"><span>▣</span>Para docentes</a><i></i>
+    <a href="#enlaces"><span>↗</span>Enlaces de interés</a><i></i>
+    <a href="#faq"><span>?</span>Preguntas frecuentes</a>
+  </nav>
+
+  <section class="resource-section" id="recursos">
+    <div class="section-heading" id="materiales">
+      <div><span class="eyebrow">BIBLIOTECA DIGITAL</span><h2>Explora los recursos</h2></div>
+      <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar recursos..." aria-label="Buscar recursos"></label>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-button selected" data-filter="Todos">Todos</button>
+      <button class="filter-button" data-filter="Matemáticas">Matemáticas</button>
+      <button class="filter-button" data-filter="Programación">Programación</button>
+      <button class="filter-button" data-filter="Otras asignaturas">Otras asignaturas</button>
+      <button class="filter-button" data-filter="Herramientas digitales">Herramientas digitales</button>
+      <button class="filter-button" data-filter="Formatos y guías">Formatos y guías</button>
+      <button class="filter-button" data-filter="Proyectos didácticos">Proyectos didácticos</button>
+    </div>
+    <div class="resource-grid" id="resourceGrid" aria-live="polite"></div>
+    <p class="empty-state" id="emptyState" hidden>No hay recursos que coincidan con la búsqueda.</p>
+  </section>
+
+  <section class="audience-section">
+    <article id="para-estudiantes"><span class="audience-icon">♟</span><div><h2>Para estudiantes</h2><p>Materiales para practicar, repasar y aprender a tu propio ritmo.</p></div></article>
+    <article id="para-docentes"><span class="audience-icon">▣</span><div><h2>Para docentes</h2><p>Recursos de apoyo para planear, enseñar y compartir experiencias.</p></div></article>
+  </section>
+
+  <section class="about-section" id="acerca">
+    <div class="about-logo">BR<span>+</span></div>
+    <div><span class="eyebrow">ACERCA DEL PROYECTO</span><h2>Aprender · Practicar · Compartir</h2><p>El Banco de Recursos Educativos es un espacio para reunir materiales didácticos, herramientas digitales y proyectos que apoyen el aprendizaje. Su contenido crecerá con nuevas aportaciones y experiencias.</p></div>
+  </section>
+  <section class="faq-section" id="faq"><h2>Preguntas frecuentes</h2><p><b>¿Cómo encuentro un material?</b> Puedes elegir una categoría o utilizar el buscador de recursos.</p><p><b>¿Puedo abrir los materiales desde el celular?</b> Sí, el portal se adapta a pantallas pequeñas.</p></section>
+  <section class="links-section" id="enlaces"><h2>Enlaces de interés</h2><p>Próximamente reuniremos aquí sitios y herramientas útiles para el aprendizaje.</p></section>
+  <section id="videos" class="videos-anchor" aria-label="Videos"></section>
+</main>
+
+<footer><strong>BANCO DE RECURSOS EDUCATIVOS</strong><span>Materiales didácticos para aprender, practicar y compartir.</span><span>© <span id="year"></span></span></footer>
+<script src="js/recursos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

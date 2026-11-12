@@ -1,0 +1,36 @@
+BANCO DE RECURSOS EDUCATIVOS — PORTADA V3
+================================================
+
+Esta versión reconstruye la portada a partir de la imagen de referencia del usuario.
+Se extrajeron el paisaje del encabezado y la ilustración de bienvenida de la imagen de referencia proporcionada.
+
+PRUEBA LOCAL
+1. Descomprime el ZIP.
+2. Abre index.html en Firefox, Chrome o Edge.
+3. No requiere servidor ni instalación.
+
+PUBLICACIÓN EN GITHUB PAGES
+1. Entra al repositorio banco-recursos-educativos.
+2. Add file > Upload files.
+3. Sube el CONTENIDO de esta carpeta a la raíz del repositorio.
+4. Acepta reemplazar index.html, css, js e img cuando GitHub lo indique.
+5. Commit changes. GitHub Pages publicará los cambios automáticamente.
+
+EDITAR RECURSOS
+- Abre js/recursos.js.
+- Cada recurso contiene titulo, categoria, tipo, descripcion y enlace.
+- Sustituye enlace "#" por la dirección compartida del documento o página.
+- Las categorías disponibles están definidas en el campo categoria.
+
+ESTRUCTURA
+index.html
+css/estilos.css
+js/recursos.js
+js/app.js
+img/logo.svg
+img/paisaje-encabezado.jpg (si se pudo extraer de la referencia)
+img/ilustracion-bienvenida.jpg (si se pudo extraer de la referencia)
+
+NOTA
+Los textos, tarjetas, navegación, filtros y buscador son HTML/CSS/JavaScript reales.
+Las imágenes decorativas extraídas de la referencia son archivos separados; no se usa una captura de pantalla como página completa.
